@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include <stdint.h>
 #include "stm32f0xx.h"
+#include <lcd_stm32f0.c>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,6 +42,25 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim16;
+
+/* Defines a 2D array LED_PATTERNS that contains all the LED patterns */
+const uint8_t LED_PATTERNS[9][8] = {
+    {1, 1, 1, 0, 1, 0, 0, 1},
+    {1, 1, 0, 1, 0, 0, 1, 0},
+    {1, 0, 1, 0, 0, 1, 0, 0},
+    {0, 1, 0, 0, 1, 0, 0, 0},
+    {1, 0, 0, 1, 0, 0, 0, 0},
+    {0, 0, 1, 0, 0, 0, 0, 0},
+    {0, 1, 0, 0, 0, 0, 0, 0},
+    {1, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0}
+};
+
+/* Keeps track of the current pattern */
+uint8_t current_pattern = 0;
+
+/* Keep track of the current delay */
+uint32_t current_delay = 1000;
 
 /* USER CODE BEGIN PV */
 // TODO: Define input variables
@@ -90,9 +110,13 @@ int main(void)
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
-  // TODO: Start timer TIM16
+  // Start timer TIM16
+  HAL_TIM_Base_Start_IT(&htim16);
 
   /* USER CODE END 2 */
+  init_LCD();
+  lcd_command(CLEAR);
+  lcd_putstring("EEE3095S Lab 1");
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -103,9 +127,33 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
     // TODO: Check pushbuttons to change timer delay
-    
-    
 
+	// Check Pushbutton 0 (PA0) for 0.5s delay
+	if (HAL_GPIO_ReadPin(Button0_GPIO_Port, Button0_Pin) == GPIO_PIN_RESET)
+    	{
+	    	current_delay = 500;
+	        __HAL_TIM_SET_AUTORELOAD(&htim16, current_delay - 1);
+	    }
+
+	// Check Pushbutton 1 (PA1) for 2s delay
+	if (HAL_GPIO_ReadPin(Button1_GPIO_Port, Button1_Pin) == GPIO_PIN_RESET)
+	    {
+	        current_delay = 2000;
+	        __HAL_TIM_SET_AUTORELOAD(&htim16, current_delay - 1);
+	    }
+
+	// Check Pushbutton 2 (PA2) for 1s delay
+	if (HAL_GPIO_ReadPin(Button2_GPIO_Port, Button2_Pin) == GPIO_PIN_RESET)
+	    {
+	        current_delay = 1000;
+	        __HAL_TIM_SET_AUTORELOAD(&htim16, current_delay - 1);
+	    }
+
+	// Check Pushbutton 3 (PA3) to reset sequence
+	if (HAL_GPIO_ReadPin(Button3_GPIO_Port, Button3_Pin) == GPIO_PIN_RESET)
+	    {
+	        current_pattern = 0;
+	    }
   }
   /* USER CODE END 3 */
 }
@@ -324,8 +372,21 @@ void TIM16_IRQHandler(void)
 	// Acknowledge interrupt
 	HAL_TIM_IRQHandler(&htim16);
 
-	// TODO: Change LED pattern
-	// print something
+	// Change LED pattern
+	HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, LED_PATTERNS[current_pattern][0]);
+	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, LED_PATTERNS[current_pattern][1]);
+	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, LED_PATTERNS[current_pattern][2]);
+	HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, LED_PATTERNS[current_pattern][3]);
+	HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, LED_PATTERNS[current_pattern][4]);
+	HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, LED_PATTERNS[current_pattern][5]);
+	HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin, LED_PATTERNS[current_pattern][6]);
+	HAL_GPIO_WritePin(LED7_GPIO_Port, LED7_Pin, LED_PATTERNS[current_pattern][7]);
+
+	// Move to next pattern
+	current_pattern = (current_pattern + 1) % 9;
+
+	// Update timer period
+	__HAL_TIM_SET_AUTORELOAD(&htim16, current_delay - 1);
 
   
 }
