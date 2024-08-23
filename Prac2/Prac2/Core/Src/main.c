@@ -365,7 +365,7 @@ void EXTI0_1_IRQHandler(void)
 	__HAL_TIM_DISABLE_DMA(&htim2, TIM_DMA_CC1);
 	HAL_DMA_Abort_IT(&hdma_tim2_ch1); // Stop DMA transfer
 
-	// Cycle through the waveforms
+	// Cycle through the 3 waveforms
 	switch (wave) {
 		case 0:
 			delay(3000);
