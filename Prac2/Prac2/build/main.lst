@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cctrd51c.s 			page 1
+ARM GAS  /tmp/ccBzFMbE.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   31:Core/Src/main.c **** /* USER CODE BEGIN PTD */
   32:Core/Src/main.c **** 
   33:Core/Src/main.c **** /* USER CODE END PTD */
-ARM GAS  /tmp/cctrd51c.s 			page 2
+ARM GAS  /tmp/ccBzFMbE.s 			page 2
 
 
   34:Core/Src/main.c **** 
@@ -67,7 +67,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   37:Core/Src/main.c **** // TODO: Add values for below variables
   38:Core/Src/main.c **** #define NS 128       // Number of samples in LUT
   39:Core/Src/main.c **** #define TIM2CLK 8000000  // STM Clock frequency
-  40:Core/Src/main.c **** #define F_SIGNAL 1 // Frequency of output analog signal
+  40:Core/Src/main.c **** #define F_SIGNAL 200 // Frequency of output analog signal
   41:Core/Src/main.c **** /* USER CODE END PD */
   42:Core/Src/main.c **** 
   43:Core/Src/main.c **** /* Private macro -------------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   88:Core/Src/main.c ****   /* USER CODE END 1 */
   89:Core/Src/main.c **** 
   90:Core/Src/main.c ****   /* MCU Configuration--------------------------------------------------------*/
-ARM GAS  /tmp/cctrd51c.s 			page 3
+ARM GAS  /tmp/ccBzFMbE.s 			page 3
 
 
   91:Core/Src/main.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  145:Core/Src/main.c ****   * @retval None
  146:Core/Src/main.c ****   */
  147:Core/Src/main.c **** void SystemClock_Config(void)
-ARM GAS  /tmp/cctrd51c.s 			page 4
+ARM GAS  /tmp/ccBzFMbE.s 			page 4
 
 
  148:Core/Src/main.c **** {
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  202:Core/Src/main.c ****   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
  203:Core/Src/main.c ****   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
  204:Core/Src/main.c ****   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
-ARM GAS  /tmp/cctrd51c.s 			page 5
+ARM GAS  /tmp/ccBzFMbE.s 			page 5
 
 
  205:Core/Src/main.c ****   {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  259:Core/Src/main.c ****   htim3.Init.Period = 1023;
  260:Core/Src/main.c ****   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
  261:Core/Src/main.c ****   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
-ARM GAS  /tmp/cctrd51c.s 			page 6
+ARM GAS  /tmp/ccBzFMbE.s 			page 6
 
 
  262:Core/Src/main.c ****   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  316:Core/Src/main.c ****   */
  317:Core/Src/main.c **** static void MX_GPIO_Init(void)
  318:Core/Src/main.c **** {
-ARM GAS  /tmp/cctrd51c.s 			page 7
+ARM GAS  /tmp/ccBzFMbE.s 			page 7
 
 
   26              		.loc 1 318 1 view -0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   25:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   *
   26:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   * Copyright (c) 2016 STMicroelectronics.
   27:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   * All rights reserved.
-ARM GAS  /tmp/cctrd51c.s 			page 8
+ARM GAS  /tmp/ccBzFMbE.s 			page 8
 
 
   28:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   *
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   82:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #define LL_AHB1_GRP1_PERIPH_GPIOC          RCC_AHBENR_GPIOCEN
   83:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #if defined(GPIOD)
   84:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #define LL_AHB1_GRP1_PERIPH_GPIOD          RCC_AHBENR_GPIODEN
-ARM GAS  /tmp/cctrd51c.s 			page 9
+ARM GAS  /tmp/ccBzFMbE.s 			page 9
 
 
   85:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #endif /*GPIOD*/
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  139:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_CRS            RCC_APB1ENR_CRSEN
  140:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #endif /*CRS*/
  141:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_PWR            RCC_APB1ENR_PWREN
-ARM GAS  /tmp/cctrd51c.s 			page 10
+ARM GAS  /tmp/ccBzFMbE.s 			page 10
 
 
  142:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h **** #if defined(DAC)
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  196:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   * @rmtoll AHBENR       DMA1EN        LL_AHB1_GRP1_EnableClock\n
  197:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   *         AHBENR       DMA2EN        LL_AHB1_GRP1_EnableClock\n
  198:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   *         AHBENR       SRAMEN        LL_AHB1_GRP1_EnableClock\n
-ARM GAS  /tmp/cctrd51c.s 			page 11
+ARM GAS  /tmp/ccBzFMbE.s 			page 11
 
 
  199:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h ****   *         AHBENR       FLITFEN       LL_AHB1_GRP1_EnableClock\n
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   71              	.LBE34:
  325:Core/Src/main.c ****   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
   72              		.loc 1 325 3 is_stmt 1 view .LVU12
-ARM GAS  /tmp/cctrd51c.s 			page 12
+ARM GAS  /tmp/ccBzFMbE.s 			page 12
 
 
   73              	.LBB36:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  114              		.loc 2 231 3 is_stmt 1 view .LVU28
  115 0046 019B     		ldr	r3, [sp, #4]
  116              	.LVL3:
-ARM GAS  /tmp/cctrd51c.s 			page 13
+ARM GAS  /tmp/ccBzFMbE.s 			page 13
 
 
  117              		.loc 2 231 3 is_stmt 0 view .LVU29
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   45:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
   46:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined (FLASH) || defined (SYSCFG) || defined (DBGMCU)
   47:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 14
+ARM GAS  /tmp/ccBzFMbE.s 			page 14
 
 
   48:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /** @defgroup SYSTEM_LL SYSTEM
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  102:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /*SYSCFG_CFGR1_USART1TX_DMA_RMP*/
  103:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined (SYSCFG_CFGR1_USART1RX_DMA_RMP)
  104:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #define LL_SYSCFG_USART1RX_RMP_DMA1CH3     ((SYSCFG_CFGR1_USART1RX_DMA_RMP >> 8U) | (uint32_t)0x000
-ARM GAS  /tmp/cctrd51c.s 			page 15
+ARM GAS  /tmp/ccBzFMbE.s 			page 15
 
 
  105:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #define LL_SYSCFG_USART1RX_RMP_DMA1CH5     ((SYSCFG_CFGR1_USART1RX_DMA_RMP >> 8U) | SYSCFG_CFGR1_US
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  159:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
  160:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_CFGR1_TIM16_DMA_RMP)
  161:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined (SYSCFG_CFGR1_TIM16_DMA_RMP2)
-ARM GAS  /tmp/cctrd51c.s 			page 16
+ARM GAS  /tmp/ccBzFMbE.s 			page 16
 
 
  162:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #define LL_SYSCFG_TIM16_RMP_DMA1_CH3       (((SYSCFG_CFGR1_TIM16_DMA_RMP | SYSCFG_CFGR1_TIM16_DMA_R
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  216:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /*SYSCFG_CFGR1_I2C_FMP_PA10*/
  217:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
  218:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @}
-ARM GAS  /tmp/cctrd51c.s 			page 17
+ARM GAS  /tmp/ccBzFMbE.s 			page 17
 
 
  219:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  273:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
  274:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @}
  275:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 18
+ARM GAS  /tmp/ccBzFMbE.s 			page 18
 
 
  276:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  330:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /* Exported functions --------------------------------------------------------*/
  331:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /** @defgroup SYSTEM_LL_Exported_Functions SYSTEM Exported Functions
  332:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @{
-ARM GAS  /tmp/cctrd51c.s 			page 19
+ARM GAS  /tmp/ccBzFMbE.s 			page 19
 
 
  333:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  387:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_IR_MOD_USART4
  388:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
  389:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_GetIRModEnvelopeSignal(void)
-ARM GAS  /tmp/cctrd51c.s 			page 20
+ARM GAS  /tmp/ccBzFMbE.s 			page 20
 
 
  390:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** {
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  444:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
  445:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE void LL_SYSCFG_SetRemapDMA_I2C(uint32_t Remap)
  446:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** {
-ARM GAS  /tmp/cctrd51c.s 			page 21
+ARM GAS  /tmp/ccBzFMbE.s 			page 21
 
 
  447:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   MODIFY_REG(SYSCFG->CFGR1, SYSCFG_CFGR1_I2C1_DMA_RMP, Remap);
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  501:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Enable PIN pair PA11/12 mapped instead of PA9/10 (control the mapping of either
  502:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * PA9/10 or PA11/12 pin pair on small pin-count packages)
  503:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_CFGR1 PA11_PA12_RMP  LL_SYSCFG_EnablePinRemap
-ARM GAS  /tmp/cctrd51c.s 			page 22
+ARM GAS  /tmp/ccBzFMbE.s 			page 22
 
 
  504:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval None
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  558:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         SYSCFG_CFGR1 I2C_FMP_I2C2  LL_SYSCFG_DisableFastModePlus\n
  559:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         SYSCFG_CFGR1 I2C_FMP_PA9   LL_SYSCFG_DisableFastModePlus\n
  560:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         SYSCFG_CFGR1 I2C_FMP_PA10  LL_SYSCFG_DisableFastModePlus
-ARM GAS  /tmp/cctrd51c.s 			page 23
+ARM GAS  /tmp/ccBzFMbE.s 			page 23
 
 
  561:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @param  ConfigFastModePlus This parameter can be a combination of the following values:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  615:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE8
  616:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE9
  617:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE10
-ARM GAS  /tmp/cctrd51c.s 			page 24
+ARM GAS  /tmp/ccBzFMbE.s 			page 24
 
 
  618:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE11
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   26:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** 
   27:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** /* Includes ------------------------------------------------------------------*/
   28:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** #include "stm32f0xx.h"
-ARM GAS  /tmp/cctrd51c.s 			page 25
+ARM GAS  /tmp/ccBzFMbE.s 			page 25
 
 
   29:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   83:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   uint32_t Pull;         /*!< Specifies the operating Pull-up/Pull down for the selected pins.
   84:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****                               This parameter can be a value of @ref GPIO_LL_EC_PULL.
   85:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 26
+ARM GAS  /tmp/ccBzFMbE.s 			page 26
 
 
   86:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****                               GPIO HW configuration can be modified afterwards using unitary functi
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  140:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** /**
  141:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   * @}
  142:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 27
+ARM GAS  /tmp/ccBzFMbE.s 			page 27
 
 
  143:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  197:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   * @{
  198:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   */
  199:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 28
+ARM GAS  /tmp/ccBzFMbE.s 			page 28
 
 
  200:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** /** @defgroup GPIO_LL_EM_WRITE_READ Common Write and read registers Macros
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  254:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_10
  255:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_11
  256:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_12
-ARM GAS  /tmp/cctrd51c.s 			page 29
+ARM GAS  /tmp/ccBzFMbE.s 			page 29
 
 
  257:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_13
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  311:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   * @param  GPIOx GPIO Port
  312:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   * @param  PinMask This parameter can be a combination of the following values:
  313:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_0
-ARM GAS  /tmp/cctrd51c.s 			page 30
+ARM GAS  /tmp/ccBzFMbE.s 			page 30
 
 
  314:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_1
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  368:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   */
  369:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** __STATIC_INLINE uint32_t LL_GPIO_GetPinOutputType(GPIO_TypeDef *GPIOx, uint32_t Pin)
  370:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h **** {
-ARM GAS  /tmp/cctrd51c.s 			page 31
+ARM GAS  /tmp/ccBzFMbE.s 			page 31
 
 
  371:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   return (uint32_t)(READ_BIT(GPIOx->OTYPER, Pin) / Pin);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  425:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_6
  426:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_7
  427:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_8
-ARM GAS  /tmp/cctrd51c.s 			page 32
+ARM GAS  /tmp/ccBzFMbE.s 			page 32
 
 
  428:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h ****   *         @arg @ref LL_GPIO_PIN_9
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  146 0058 0320     		movs	r0, #3
  147 005a 8343     		bics	r3, r0
  148 005c 0122     		movs	r2, #1
-ARM GAS  /tmp/cctrd51c.s 			page 33
+ARM GAS  /tmp/ccBzFMbE.s 			page 33
 
 
  149 005e 1343     		orrs	r3, r2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  187 007a 0021     		movs	r1, #0
  188 007c 0520     		movs	r0, #5
  189 007e FFF7FEFF 		bl	HAL_NVIC_SetPriority
-ARM GAS  /tmp/cctrd51c.s 			page 34
+ARM GAS  /tmp/ccBzFMbE.s 			page 34
 
 
  190              	.LVL8:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  238 0012 0193     		str	r3, [sp, #4]
  303:Core/Src/main.c **** 
  239              		.loc 1 303 3 view .LVU59
-ARM GAS  /tmp/cctrd51c.s 			page 35
+ARM GAS  /tmp/ccBzFMbE.s 			page 35
 
 
  240 0014 019B     		ldr	r3, [sp, #4]
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   18:Core/Inc/lcd_stm32f0.c **** //*==================================================================*
   19:Core/Inc/lcd_stm32f0.c **** //* LCD SETUP:     - 4 bit mode      (Upper 4 data lines D4-D7 used) *
   20:Core/Inc/lcd_stm32f0.c **** //*                - Two lines used                                  *
-ARM GAS  /tmp/cctrd51c.s 			page 36
+ARM GAS  /tmp/ccBzFMbE.s 			page 36
 
 
   21:Core/Inc/lcd_stm32f0.c **** //*                - Flashing cursor                                 *
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   75:Core/Inc/lcd_stm32f0.c **** // Put upper nibble (upper 4-bits) on data lines, command mode
   76:Core/Inc/lcd_stm32f0.c **** // DATALINE 7
   77:Core/Inc/lcd_stm32f0.c ****     if ((command & 0x80) != 0)		// Select bit 7 of command, if HIGH set Data line 7 (D7) 
-ARM GAS  /tmp/cctrd51c.s 			page 37
+ARM GAS  /tmp/ccBzFMbE.s 			page 37
 
 
   78:Core/Inc/lcd_stm32f0.c ****     {
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  132:Core/Inc/lcd_stm32f0.c ****     }
  133:Core/Inc/lcd_stm32f0.c ****     // DATALINE 5
  134:Core/Inc/lcd_stm32f0.c ****     if ((command & 0x02) != 0)		// Select bit 1 of command, if HIGH set Data line 5 (D5)
-ARM GAS  /tmp/cctrd51c.s 			page 38
+ARM GAS  /tmp/ccBzFMbE.s 			page 38
 
 
  135:Core/Inc/lcd_stm32f0.c ****     {
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  189:Core/Inc/lcd_stm32f0.c **** // DESCRIPTION: Puts a single character on the LCD at the next position
  190:Core/Inc/lcd_stm32f0.c **** //              on the screen. The character to be printed is in the input
  191:Core/Inc/lcd_stm32f0.c **** //              parameter. For numbers, letters and other common characters
-ARM GAS  /tmp/cctrd51c.s 			page 39
+ARM GAS  /tmp/ccBzFMbE.s 			page 39
 
 
  192:Core/Inc/lcd_stm32f0.c **** //              the ASCII code will produce correct display.
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  246:Core/Inc/lcd_stm32f0.c ****         	GPIOA->BSRR |= LCD_D7_SET;
  247:Core/Inc/lcd_stm32f0.c ****         }
  248:Core/Inc/lcd_stm32f0.c ****         else				// else RESET D7
-ARM GAS  /tmp/cctrd51c.s 			page 40
+ARM GAS  /tmp/ccBzFMbE.s 			page 40
 
 
  249:Core/Inc/lcd_stm32f0.c ****         {
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  303:Core/Inc/lcd_stm32f0.c **** // PULSE STROBE - Pulse_Strobe()
  304:Core/Inc/lcd_stm32f0.c **** //====================================================================
  305:Core/Inc/lcd_stm32f0.c **** // DESCRIPTION: Pulse the strobe line of the LCD to indicate that data is ready.
-ARM GAS  /tmp/cctrd51c.s 			page 41
+ARM GAS  /tmp/ccBzFMbE.s 			page 41
 
 
  306:Core/Inc/lcd_stm32f0.c **** //====================================================================
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  298              		.syntax divided
  299              	@ 336 "Core/Inc/lcd_stm32f0.c" 1
  300 000c C046     		nop
-ARM GAS  /tmp/cctrd51c.s 			page 42
+ARM GAS  /tmp/ccBzFMbE.s 			page 42
 
 
  301              	@ 0 "" 2
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  312:Core/Inc/lcd_stm32f0.c **** 
  349              		.loc 5 312 10 is_stmt 0 view .LVU80
  350 0008 0A4C     		ldr	r4, .L11
-ARM GAS  /tmp/cctrd51c.s 			page 43
+ARM GAS  /tmp/ccBzFMbE.s 			page 43
 
 
  351 000a A369     		ldr	r3, [r4, #24]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  397              	.LVL17:
  398              	.LFB348:
  199:Core/Inc/lcd_stm32f0.c **** 	GPIOC->BSRR |= LCD_RS_SET;	// Register Select (RS) line HIGH (data sent will now be read as text);
-ARM GAS  /tmp/cctrd51c.s 			page 44
+ARM GAS  /tmp/ccBzFMbE.s 			page 44
 
 
  399              		.loc 5 199 1 is_stmt 1 view -0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  440              		.loc 5 214 13 is_stmt 1 view .LVU104
  214:Core/Inc/lcd_stm32f0.c ****         }
  441              		.loc 5 214 18 is_stmt 0 view .LVU105
-ARM GAS  /tmp/cctrd51c.s 			page 45
+ARM GAS  /tmp/ccBzFMbE.s 			page 45
 
 
  442 0028 9022     		movs	r2, #144
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  244:Core/Inc/lcd_stm32f0.c ****         {
  483              		.loc 5 244 12 is_stmt 0 view .LVU119
  484 005a 2307     		lsls	r3, r4, #28
-ARM GAS  /tmp/cctrd51c.s 			page 46
+ARM GAS  /tmp/ccBzFMbE.s 			page 46
 
 
  485 005c 40D5     		bpl	.L22
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  272:Core/Inc/lcd_stm32f0.c ****         {
  526              		.loc 5 272 9 is_stmt 1 view .LVU133
  272:Core/Inc/lcd_stm32f0.c ****         {
-ARM GAS  /tmp/cctrd51c.s 			page 47
+ARM GAS  /tmp/ccBzFMbE.s 			page 47
 
 
  527              		.loc 5 272 12 is_stmt 0 view .LVU134
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  570 00c2 B8E7     		b	.L17
  571              	.L18:
  229:Core/Inc/lcd_stm32f0.c ****         }
-ARM GAS  /tmp/cctrd51c.s 			page 48
+ARM GAS  /tmp/ccBzFMbE.s 			page 48
 
 
  572              		.loc 5 229 10 is_stmt 1 view .LVU146
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  615 00fa 0B43     		orrs	r3, r1
  616 00fc 9361     		str	r3, [r2, #24]
  617 00fe BEE7     		b	.L25
-ARM GAS  /tmp/cctrd51c.s 			page 49
+ARM GAS  /tmp/ccBzFMbE.s 			page 49
 
 
  618              	.L26:
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  666              		.cfi_offset 4, -16
  667              		.cfi_offset 5, -12
  668              		.cfi_offset 6, -8
-ARM GAS  /tmp/cctrd51c.s 			page 50
+ARM GAS  /tmp/ccBzFMbE.s 			page 50
 
 
  669              		.cfi_offset 14, -4
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  711              		.thumb_func
  713              	lcd_command:
  714              	.LVL30:
-ARM GAS  /tmp/cctrd51c.s 			page 51
+ARM GAS  /tmp/ccBzFMbE.s 			page 51
 
 
  715              	.LFB346:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  756 0026 48D5     		bpl	.L39
   88:Core/Inc/lcd_stm32f0.c ****     }
  757              		.loc 5 88 9 is_stmt 1 view .LVU192
-ARM GAS  /tmp/cctrd51c.s 			page 52
+ARM GAS  /tmp/ccBzFMbE.s 			page 52
 
 
   88:Core/Inc/lcd_stm32f0.c ****     }
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  116:Core/Inc/lcd_stm32f0.c ****     {
  799              		.loc 5 116 5 view .LVU206
  116:Core/Inc/lcd_stm32f0.c ****     {
-ARM GAS  /tmp/cctrd51c.s 			page 53
+ARM GAS  /tmp/ccBzFMbE.s 			page 53
 
 
  800              		.loc 5 116 8 is_stmt 0 view .LVU207
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  841 008c 9361     		str	r3, [r2, #24]
  842              	.L50:
  143:Core/Inc/lcd_stm32f0.c ****     {
-ARM GAS  /tmp/cctrd51c.s 			page 54
+ARM GAS  /tmp/ccBzFMbE.s 			page 54
 
 
  843              		.loc 5 143 5 is_stmt 1 view .LVU221
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  885 00be 9169     		ldr	r1, [r2, #24]
   92:Core/Inc/lcd_stm32f0.c ****     }
  886              		.loc 5 92 21 view .LVU234
-ARM GAS  /tmp/cctrd51c.s 			page 55
+ARM GAS  /tmp/ccBzFMbE.s 			page 55
 
 
  887 00c0 8023     		movs	r3, #128
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  930 00f6 9022     		movs	r2, #144
  931 00f8 D205     		lsls	r2, r2, #23
  932 00fa 9169     		ldr	r1, [r2, #24]
-ARM GAS  /tmp/cctrd51c.s 			page 56
+ARM GAS  /tmp/ccBzFMbE.s 			page 56
 
 
  131:Core/Inc/lcd_stm32f0.c ****     }
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  981              		@ args = 0, pretend = 0, frame = 0
  982              		@ frame_needed = 0, uses_anonymous_args = 0
  983 0000 10B5     		push	{r4, lr}
-ARM GAS  /tmp/cctrd51c.s 			page 57
+ARM GAS  /tmp/ccBzFMbE.s 			page 57
 
 
  984              	.LCFI9:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1024              		.loc 5 174 10 is_stmt 0 view .LVU267
  1025 0030 104A     		ldr	r2, .L57+4
  1026 0032 1168     		ldr	r1, [r2]
-ARM GAS  /tmp/cctrd51c.s 			page 58
+ARM GAS  /tmp/ccBzFMbE.s 			page 58
 
 
  174:Core/Inc/lcd_stm32f0.c ****     GPIOC->MODER |= (GPIO_MODER_MODER14_0|GPIO_MODER_MODER15_0); // RS and EN
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1070              	.L57:
  1071 0070 00100240 		.word	1073876992
  1072 0074 00040048 		.word	1207960576
-ARM GAS  /tmp/cctrd51c.s 			page 59
+ARM GAS  /tmp/ccBzFMbE.s 			page 59
 
 
  1073 0078 00080048 		.word	1207961600
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1114              		.loc 1 358 19 is_stmt 0 view .LVU284
  1115 000a 364B     		ldr	r3, .L67+4
  1116 000c 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/cctrd51c.s 			page 60
+ARM GAS  /tmp/ccBzFMbE.s 			page 60
 
 
  1117 000e C01A     		subs	r0, r0, r3
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1131 001c 1A68     		ldr	r2, [r3]
  1132 001e D368     		ldr	r3, [r2, #12]
  1133 0020 3349     		ldr	r1, .L67+16
-ARM GAS  /tmp/cctrd51c.s 			page 61
+ARM GAS  /tmp/ccBzFMbE.s 			page 61
 
 
  1134 0022 0B40     		ands	r3, r1
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1179 006a 1A60     		str	r2, [r3]
  393:Core/Src/main.c **** 	}
  1180              		.loc 1 393 4 is_stmt 1 view .LVU298
-ARM GAS  /tmp/cctrd51c.s 			page 62
+ARM GAS  /tmp/ccBzFMbE.s 			page 62
 
 
  1181 006c 19E0     		b	.L64
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1225 00aa 1448     		ldr	r0, .L67+28
  1226 00ac FFF7FEFF 		bl	delay
  1227              	.LVL53:
-ARM GAS  /tmp/cctrd51c.s 			page 63
+ARM GAS  /tmp/ccBzFMbE.s 			page 63
 
 
  380:Core/Src/main.c **** 			lcd_putstring("Sawtooth");
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1275 0114 08000000 		.word	.LC10
  1276 0118 00000000 		.word	saw_LUT
  1277              		.cfi_endproc
-ARM GAS  /tmp/cctrd51c.s 			page 64
+ARM GAS  /tmp/ccBzFMbE.s 			page 64
 
 
  1278              	.LFE358:
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   25:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
   26:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
   27:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 65
+ARM GAS  /tmp/ccBzFMbE.s 			page 65
 
 
   28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   82:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
   83:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   84:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
-ARM GAS  /tmp/cctrd51c.s 			page 66
+ARM GAS  /tmp/ccBzFMbE.s 			page 66
 
 
   85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  139:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  140:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
  1299              		.loc 6 140 27 view .LVU318
-ARM GAS  /tmp/cctrd51c.s 			page 67
+ARM GAS  /tmp/ccBzFMbE.s 			page 67
 
 
  1300              	.LBB48:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1345              		.loc 1 192 27 is_stmt 0 view .LVU327
  1346 000e 0822     		movs	r2, #8
  1347 0010 0021     		movs	r1, #0
-ARM GAS  /tmp/cctrd51c.s 			page 68
+ARM GAS  /tmp/ccBzFMbE.s 			page 68
 
 
  1348 0012 08A8     		add	r0, sp, #32
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  204:Core/Src/main.c ****   {
  1386              		.loc 1 204 7 is_stmt 0 view .LVU344
  1387 003e FFF7FEFF 		bl	HAL_TIM_Base_Init
-ARM GAS  /tmp/cctrd51c.s 			page 69
+ARM GAS  /tmp/ccBzFMbE.s 			page 69
 
 
  1388              	.LVL60:
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  219:Core/Src/main.c ****   {
  1427              		.loc 1 219 6 view .LVU360
  1428 0070 0028     		cmp	r0, #0
-ARM GAS  /tmp/cctrd51c.s 			page 70
+ARM GAS  /tmp/ccBzFMbE.s 			page 70
 
 
  1429 0072 13D1     		bne	.L80
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1468              	.LVL67:
  1469              	.L80:
  221:Core/Src/main.c ****   }
-ARM GAS  /tmp/cctrd51c.s 			page 71
+ARM GAS  /tmp/ccBzFMbE.s 			page 71
 
 
  1470              		.loc 1 221 5 view .LVU376
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  251:Core/Src/main.c **** 
  1519              		.loc 1 251 22 is_stmt 0 view .LVU384
  1520 0018 1C22     		movs	r2, #28
-ARM GAS  /tmp/cctrd51c.s 			page 72
+ARM GAS  /tmp/ccBzFMbE.s 			page 72
 
 
  1521 001a 0021     		movs	r1, #0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1558 0042 5B01     		lsls	r3, r3, #5
  1559 0044 0A93     		str	r3, [sp, #40]
  267:Core/Src/main.c ****   {
-ARM GAS  /tmp/cctrd51c.s 			page 73
+ARM GAS  /tmp/ccBzFMbE.s 			page 73
 
 
  1560              		.loc 1 267 3 is_stmt 1 view .LVU402
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1598              		.loc 1 282 19 is_stmt 0 view .LVU418
  1599 0072 0023     		movs	r3, #0
  1600 0074 0293     		str	r3, [sp, #8]
-ARM GAS  /tmp/cctrd51c.s 			page 74
+ARM GAS  /tmp/ccBzFMbE.s 			page 74
 
 
  283:Core/Src/main.c ****   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  287:Core/Src/main.c ****   }
  1642              		.loc 1 287 5 view .LVU432
  1643 00a2 FFF7FEFF 		bl	Error_Handler
-ARM GAS  /tmp/cctrd51c.s 			page 75
+ARM GAS  /tmp/ccBzFMbE.s 			page 75
 
 
  1644              	.LVL83:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  650:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE1
  651:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE2
  652:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE3
-ARM GAS  /tmp/cctrd51c.s 			page 76
+ARM GAS  /tmp/ccBzFMbE.s 			page 76
 
 
  653:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_SYSCFG_EXTI_LINE4
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  707:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE1 SR_VDDIO2     LL_SYSCFG_IsActiveFlag_VDDIO2
  708:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval State of bit (1 or 0).
  709:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 77
+ARM GAS  /tmp/ccBzFMbE.s 			page 77
 
 
  710:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_VDDIO2(void)
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  764:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE4_SR_CRS)
  765:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
  766:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Check if Clock recovery system interrupt occurred or not.
-ARM GAS  /tmp/cctrd51c.s 			page 78
+ARM GAS  /tmp/ccBzFMbE.s 			page 78
 
 
  767:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE4 SR_CRS        LL_SYSCFG_IsActiveFlag_CRS
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  821:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
  822:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /* SYSCFG_ITLINE6_SR_EXTI2 */
  823:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 79
+ARM GAS  /tmp/ccBzFMbE.s 			page 79
 
 
  824:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE6_SR_EXTI3)
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  878:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_EXTI7(void)
  879:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** {
  880:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   return (READ_BIT(SYSCFG->IT_LINE_SR[7], SYSCFG_ITLINE7_SR_EXTI7) == (SYSCFG_ITLINE7_SR_EXTI7));
-ARM GAS  /tmp/cctrd51c.s 			page 80
+ARM GAS  /tmp/ccBzFMbE.s 			page 80
 
 
  881:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  935:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE7 SR_EXTI12     LL_SYSCFG_IsActiveFlag_EXTI12
  936:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval State of bit (1 or 0).
  937:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 81
+ARM GAS  /tmp/ccBzFMbE.s 			page 81
 
 
  938:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_EXTI12(void)
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  992:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE8_SR_TSC_MCE)
  993:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
  994:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Check if Touch sensing controller max counterror interrupt occurred or not.
-ARM GAS  /tmp/cctrd51c.s 			page 82
+ARM GAS  /tmp/ccBzFMbE.s 			page 82
 
 
  995:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE8 SR_TSC_MCE    LL_SYSCFG_IsActiveFlag_TSC_MCE
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1049:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
 1050:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /* SYSCFG_ITLINE10_SR_DMA2_CH1 */
 1051:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 83
+ARM GAS  /tmp/ccBzFMbE.s 			page 83
 
 
 1052:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE10_SR_DMA2_CH2)
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1106:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_DMA1_CH7(void)
 1107:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** {
 1108:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   return (READ_BIT(SYSCFG->IT_LINE_SR[11], SYSCFG_ITLINE11_SR_DMA1_CH7) == (SYSCFG_ITLINE11_SR_DMA1
-ARM GAS  /tmp/cctrd51c.s 			page 84
+ARM GAS  /tmp/ccBzFMbE.s 			page 84
 
 
 1109:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1163:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE12 SR_COMP1      LL_SYSCFG_IsActiveFlag_COMP1
 1164:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval State of bit (1 or 0).
 1165:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 85
+ARM GAS  /tmp/ccBzFMbE.s 			page 85
 
 
 1166:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_COMP1(void)
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1220:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE13_SR_TIM1_CCU)
 1221:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
 1222:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Check if Timer 1 commutation interrupt occurred or not.
-ARM GAS  /tmp/cctrd51c.s 			page 86
+ARM GAS  /tmp/ccBzFMbE.s 			page 86
 
 
 1223:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE13 SR_TIM1_CCU   LL_SYSCFG_IsActiveFlag_TIM1_CCU
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1277:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
 1278:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /* SYSCFG_ITLINE17_SR_DAC */
 1279:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 87
+ARM GAS  /tmp/ccBzFMbE.s 			page 87
 
 
 1280:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE17_SR_TIM6_GLB)
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1334:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_TIM16(void)
 1335:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** {
 1336:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   return (READ_BIT(SYSCFG->IT_LINE_SR[21], SYSCFG_ITLINE21_SR_TIM16_GLB) == (SYSCFG_ITLINE21_SR_TIM
-ARM GAS  /tmp/cctrd51c.s 			page 88
+ARM GAS  /tmp/ccBzFMbE.s 			page 88
 
 
 1337:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1391:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE26 SR_SPI2       LL_SYSCFG_IsActiveFlag_SPI2
 1392:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval State of bit (1 or 0).
 1393:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 89
+ARM GAS  /tmp/ccBzFMbE.s 			page 89
 
 
 1394:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** __STATIC_INLINE uint32_t LL_SYSCFG_IsActiveFlag_SPI2(void)
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1448:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE29_SR_USART5_GLB)
 1449:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
 1450:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Check if USART5 interrupt occurred or not.
-ARM GAS  /tmp/cctrd51c.s 			page 90
+ARM GAS  /tmp/ccBzFMbE.s 			page 90
 
 
 1451:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll SYSCFG_ITLINE29 SR_USART5_GLB  LL_SYSCFG_IsActiveFlag_USART5
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1505:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
 1506:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #endif /* SYSCFG_ITLINE30_SR_CAN */
 1507:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 91
+ARM GAS  /tmp/ccBzFMbE.s 			page 91
 
 
 1508:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** #if defined(SYSCFG_ITLINE30_SR_CEC)
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1562:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** }
 1563:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** 
 1564:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
-ARM GAS  /tmp/cctrd51c.s 			page 92
+ARM GAS  /tmp/ccBzFMbE.s 			page 92
 
 
 1565:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Check if SRAM parity error detected
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1619:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h **** /**
 1620:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @brief  Enable the Debug Module during STOP mode
 1621:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @rmtoll DBGMCU_CR    DBG_STOP      LL_DBGMCU_EnableDBGStopMode
-ARM GAS  /tmp/cctrd51c.s 			page 93
+ARM GAS  /tmp/ccBzFMbE.s 			page 93
 
 
 1622:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval None
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1676:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_TIM14_STOP
 1677:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_RTC_STOP
 1678:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_WWDG_STOP
-ARM GAS  /tmp/cctrd51c.s 			page 94
+ARM GAS  /tmp/ccBzFMbE.s 			page 94
 
 
 1679:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP1_IWDG_STOP
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1733:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         @arg @ref LL_DBGMCU_APB1_GRP2_TIM17_STOP
 1734:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *
 1735:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   *         (*) value not defined in all devices
-ARM GAS  /tmp/cctrd51c.s 			page 95
+ARM GAS  /tmp/ccBzFMbE.s 			page 95
 
 
 1736:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h ****   * @retval None
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1685              	.L98:
  1686              		.loc 3 1780 3 is_stmt 0 view .LVU437
  1687              	.LBE50:
-ARM GAS  /tmp/cctrd51c.s 			page 96
+ARM GAS  /tmp/ccBzFMbE.s 			page 96
 
 
  1688              	.LBE49:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   19:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #ifndef __STM32F0xx_LL_RCC_H
   20:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define __STM32F0xx_LL_RCC_H
   21:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 97
+ARM GAS  /tmp/ccBzFMbE.s 			page 97
 
 
   22:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #ifdef __cplusplus
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
   76:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @{
   77:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
   78:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 98
+ARM GAS  /tmp/ccBzFMbE.s 			page 98
 
 
   79:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /** @defgroup LL_ES_CLOCK_FREQ Clocks Frequency Structure
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  133:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #endif /* RCC_HSI48_SUPPORT */
  134:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
  135:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @}
-ARM GAS  /tmp/cctrd51c.s 			page 99
+ARM GAS  /tmp/ccBzFMbE.s 			page 99
 
 
  136:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  190:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_CIR_HSIRDYIE               RCC_CIR_HSIRDYIE      /*!< HSI Ready Interrupt Enable */
  191:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_CIR_HSERDYIE               RCC_CIR_HSERDYIE      /*!< HSE Ready Interrupt Enable */
  192:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_CIR_PLLRDYIE               RCC_CIR_PLLRDYIE      /*!< PLL Ready Interrupt Enable */
-ARM GAS  /tmp/cctrd51c.s 			page 100
+ARM GAS  /tmp/ccBzFMbE.s 			page 100
 
 
  193:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_CIR_HSI14RDYIE              RCC_CIR_HSI14RDYIE   /*!< HSI14 Ready Interrupt Enable *
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  247:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_SYSCLK_DIV_128              RCC_CFGR_HPRE_DIV128 /*!< SYSCLK divided by 128 */
  248:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_SYSCLK_DIV_256              RCC_CFGR_HPRE_DIV256 /*!< SYSCLK divided by 256 */
  249:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_SYSCLK_DIV_512              RCC_CFGR_HPRE_DIV512 /*!< SYSCLK divided by 512 */
-ARM GAS  /tmp/cctrd51c.s 			page 101
+ARM GAS  /tmp/ccBzFMbE.s 			page 101
 
 
  250:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  304:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #if defined(USE_FULL_LL_DRIVER)
  305:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_PERIPH_FREQUENCY Peripheral clock frequency
  306:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @{
-ARM GAS  /tmp/cctrd51c.s 			page 102
+ARM GAS  /tmp/ccBzFMbE.s 			page 102
 
 
  307:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  361:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @{
  362:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  363:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #if defined(RCC_CFGR3_USBSW_HSI48)
-ARM GAS  /tmp/cctrd51c.s 			page 103
+ARM GAS  /tmp/ccBzFMbE.s 			page 103
 
 
  364:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_USB_CLKSOURCE_HSI48         RCC_CFGR3_USBSW_HSI48   /*!< HSI48 oscillator clock used
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  418:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @{
  419:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  420:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_RTC_CLKSOURCE_NONE          0x00000000U                   /*!< No clock used as RTC 
-ARM GAS  /tmp/cctrd51c.s 			page 104
+ARM GAS  /tmp/ccBzFMbE.s 			page 104
 
 
  421:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_RTC_CLKSOURCE_LSE           RCC_BDCR_RTCSEL_0       /*!< LSE oscillator clock used a
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  475:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_PLLSOURCE_HSE_DIV_14        (RCC_CFGR_PLLSRC_HSE_PREDIV | RCC_CFGR2_PREDIV_DIV14)   
  476:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_PLLSOURCE_HSE_DIV_15        (RCC_CFGR_PLLSRC_HSE_PREDIV | RCC_CFGR2_PREDIV_DIV15)   
  477:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_PLLSOURCE_HSE_DIV_16        (RCC_CFGR_PLLSRC_HSE_PREDIV | RCC_CFGR2_PREDIV_DIV16)   
-ARM GAS  /tmp/cctrd51c.s 			page 105
+ARM GAS  /tmp/ccBzFMbE.s 			page 105
 
 
  478:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #endif /* RCC_PLLSRC_PREDIV1_SUPPORT */
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  532:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** #define LL_RCC_ReadReg(__REG__) READ_REG(RCC->__REG__)
  533:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
  534:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @}
-ARM GAS  /tmp/cctrd51c.s 			page 106
+ARM GAS  /tmp/ccBzFMbE.s 			page 106
 
 
  535:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  589:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @param  __INPUTFREQ__ PLL Input frequency (based on HSE div Prediv / HSI div 2)
  590:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @param  __PLLMUL__ This parameter can be one of the following values:
  591:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLL_MUL_2
-ARM GAS  /tmp/cctrd51c.s 			page 107
+ARM GAS  /tmp/ccBzFMbE.s 			page 107
 
 
  592:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_PLL_MUL_3
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  646:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @}
  647:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  648:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** 
-ARM GAS  /tmp/cctrd51c.s 			page 108
+ARM GAS  /tmp/ccBzFMbE.s 			page 108
 
 
  649:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  703:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
  704:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @brief  Enable HSE crystal oscillator (HSE ON)
  705:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @rmtoll CR           HSEON         LL_RCC_HSE_Enable
-ARM GAS  /tmp/cctrd51c.s 			page 109
+ARM GAS  /tmp/ccBzFMbE.s 			page 109
 
 
  706:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @retval None
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  159:Core/Src/main.c ****   LL_RCC_HSI_SetCalibTrimming(16);
  1719              		.loc 1 159 3 discriminator 1 view .LVU447
  156:Core/Src/main.c ****   {
-ARM GAS  /tmp/cctrd51c.s 			page 110
+ARM GAS  /tmp/ccBzFMbE.s 			page 110
 
 
  1720              		.loc 1 156 30 discriminator 1 view .LVU448
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  783:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** /**
  784:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @brief  Set HSI Calibration trimming
  785:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @note user-programmable trimming value that is added to the HSICAL
-ARM GAS  /tmp/cctrd51c.s 			page 111
+ARM GAS  /tmp/ccBzFMbE.s 			page 111
 
 
  786:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @note Default value is 16, which, when added to the HSICAL value,
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  822:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** {
  823:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   SET_BIT(RCC->CR2, RCC_CR2_HSI48ON);
  824:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** }
-ARM GAS  /tmp/cctrd51c.s 			page 112
+ARM GAS  /tmp/ccBzFMbE.s 			page 112
 
 
  825:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** 
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  879:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @retval None
  880:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  881:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSI14_Disable(void)
-ARM GAS  /tmp/cctrd51c.s 			page 113
+ARM GAS  /tmp/ccBzFMbE.s 			page 113
 
 
  882:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** {
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  936:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  937:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_HSI14_GetCalibTrimming(void)
  938:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** {
-ARM GAS  /tmp/cctrd51c.s 			page 114
+ARM GAS  /tmp/ccBzFMbE.s 			page 114
 
 
  939:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   return (uint32_t)(READ_BIT(RCC->CR2, RCC_CR2_HSI14TRIM) >> RCC_POSITION_HSI14TRIM);
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  993:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @retval None
  994:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
  995:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_LSE_DisableBypass(void)
-ARM GAS  /tmp/cctrd51c.s 			page 115
+ARM GAS  /tmp/ccBzFMbE.s 			page 115
 
 
  996:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** {
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1050:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @rmtoll CSR          LSION         LL_RCC_LSI_Enable
 1051:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   * @retval None
 1052:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
-ARM GAS  /tmp/cctrd51c.s 			page 116
+ARM GAS  /tmp/ccBzFMbE.s 			page 116
 
 
 1053:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_LSI_Enable(void)
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1107:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_HSI
 1108:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_HSE
 1109:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_PLL
-ARM GAS  /tmp/cctrd51c.s 			page 117
+ARM GAS  /tmp/ccBzFMbE.s 			page 117
 
 
 1110:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_STATUS_HSI48 (*)
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
 1149:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h ****   */
 1150:Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_SetAPB1Prescaler(uint32_t Prescaler)
  1769              		.loc 7 1150 22 view .LVU462
-ARM GAS  /tmp/cctrd51c.s 			page 118
+ARM GAS  /tmp/ccBzFMbE.s 			page 118
 
 
  1770              	.LBB62:
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1811 0054 FAD1     		bne	.L100
  170:Core/Src/main.c **** 
  1812              		.loc 1 170 3 is_stmt 1 view .LVU476
-ARM GAS  /tmp/cctrd51c.s 			page 119
+ARM GAS  /tmp/ccBzFMbE.s 			page 119
 
 
  1813 0056 0848     		ldr	r0, .L105+12
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1862              	.LVL94:
   99:Core/Src/main.c **** 
  1863              		.loc 1 99 3 view .LVU484
-ARM GAS  /tmp/cctrd51c.s 			page 120
+ARM GAS  /tmp/ccBzFMbE.s 			page 120
 
 
  1864 0006 FFF7FEFF 		bl	SystemClock_Config
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  125:Core/Src/main.c **** 
  1908              		.loc 1 125 3 view .LVU495
  1909 004a 0B48     		ldr	r0, .L109+24
-ARM GAS  /tmp/cctrd51c.s 			page 121
+ARM GAS  /tmp/ccBzFMbE.s 			page 121
 
 
  1910 004c FFF7FEFF 		bl	lcd_putstring
@@ -7258,12 +7258,12 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  1971 0000 3C040040 		.word	1073742908
  1972              		.global	TIM2_Ticks
  1973              		.section	.data.TIM2_Ticks,"aw"
-ARM GAS  /tmp/cctrd51c.s 			page 122
+ARM GAS  /tmp/ccBzFMbE.s 			page 122
 
 
  1974              		.align	2
  1977              	TIM2_Ticks:
- 1978 0000 24F40000 		.word	62500
+ 1978 0000 38010000 		.word	312
  1979              		.global	triangle_LUT
  1980              		.section	.data.triangle_LUT,"aw"
  1981              		.align	2
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2032 00bc F0020000 		.word	752
  2033 00c0 00030000 		.word	768
  2034 00c4 10030000 		.word	784
-ARM GAS  /tmp/cctrd51c.s 			page 123
+ARM GAS  /tmp/ccBzFMbE.s 			page 123
 
 
  2035 00c8 20030000 		.word	800
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2089 01a0 80010000 		.word	384
  2090 01a4 70010000 		.word	368
  2091 01a8 60010000 		.word	352
-ARM GAS  /tmp/cctrd51c.s 			page 124
+ARM GAS  /tmp/ccBzFMbE.s 			page 124
 
 
  2092 01ac 50010000 		.word	336
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2148 0074 EA000000 		.word	234
  2149 0078 F2000000 		.word	242
  2150 007c FA000000 		.word	250
-ARM GAS  /tmp/cctrd51c.s 			page 125
+ARM GAS  /tmp/ccBzFMbE.s 			page 125
 
 
  2151 0080 02010000 		.word	258
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2205 0158 B5020000 		.word	693
  2206 015c BD020000 		.word	701
  2207 0160 C5020000 		.word	709
-ARM GAS  /tmp/cctrd51c.s 			page 126
+ARM GAS  /tmp/ccBzFMbE.s 			page 126
 
 
  2208 0164 CD020000 		.word	717
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2264 002c 07030000 		.word	775
  2265 0030 1C030000 		.word	796
  2266 0034 31030000 		.word	817
-ARM GAS  /tmp/cctrd51c.s 			page 127
+ARM GAS  /tmp/ccBzFMbE.s 			page 127
 
 
  2267 0038 44030000 		.word	836
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2321 0110 9C010000 		.word	412
  2322 0114 83010000 		.word	387
  2323 0118 6B010000 		.word	363
-ARM GAS  /tmp/cctrd51c.s 			page 128
+ARM GAS  /tmp/ccBzFMbE.s 			page 128
 
 
  2324 011c 53010000 		.word	339
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2378 01f4 B5010000 		.word	437
  2379 01f8 CE010000 		.word	462
  2380 01fc E7010000 		.word	487
-ARM GAS  /tmp/cctrd51c.s 			page 129
+ARM GAS  /tmp/ccBzFMbE.s 			page 129
 
 
  2381              		.global	hdma_tim2_ch1
@@ -7726,78 +7726,78 @@ ARM GAS  /tmp/cctrd51c.s 			page 1
  2417              		.file 21 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h"
  2418              		.file 22 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h"
  2419              		.file 23 "<built-in>"
-ARM GAS  /tmp/cctrd51c.s 			page 130
+ARM GAS  /tmp/ccBzFMbE.s 			page 130
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-     /tmp/cctrd51c.s:19     .text.MX_GPIO_Init:00000000 $t
-     /tmp/cctrd51c.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-     /tmp/cctrd51c.s:202    .text.MX_GPIO_Init:0000008c $d
-     /tmp/cctrd51c.s:208    .text.MX_DMA_Init:00000000 $t
-     /tmp/cctrd51c.s:213    .text.MX_DMA_Init:00000000 MX_DMA_Init
-     /tmp/cctrd51c.s:260    .text.MX_DMA_Init:0000002c $d
-     /tmp/cctrd51c.s:265    .text.delay:00000000 $t
-     /tmp/cctrd51c.s:271    .text.delay:00000000 delay
-     /tmp/cctrd51c.s:325    .text.pulse_strobe:00000000 $t
-     /tmp/cctrd51c.s:331    .text.pulse_strobe:00000000 pulse_strobe
-     /tmp/cctrd51c.s:385    .text.pulse_strobe:00000034 $d
-     /tmp/cctrd51c.s:390    .text.lcd_putchar:00000000 $t
-     /tmp/cctrd51c.s:396    .text.lcd_putchar:00000000 lcd_putchar
-     /tmp/cctrd51c.s:643    .text.lcd_putchar:0000011c $d
-     /tmp/cctrd51c.s:649    .text.lcd_putstring:00000000 $t
-     /tmp/cctrd51c.s:655    .text.lcd_putstring:00000000 lcd_putstring
-     /tmp/cctrd51c.s:707    .text.lcd_command:00000000 $t
-     /tmp/cctrd51c.s:713    .text.lcd_command:00000000 lcd_command
-     /tmp/cctrd51c.s:964    .text.lcd_command:00000124 $d
-     /tmp/cctrd51c.s:971    .text.init_LCD:00000000 $t
-     /tmp/cctrd51c.s:977    .text.init_LCD:00000000 init_LCD
-     /tmp/cctrd51c.s:1071   .text.init_LCD:00000070 $d
-     /tmp/cctrd51c.s:1079   .rodata.EXTI0_1_IRQHandler.str1.4:00000000 $d
-     /tmp/cctrd51c.s:1089   .text.EXTI0_1_IRQHandler:00000000 $t
-     /tmp/cctrd51c.s:1095   .text.EXTI0_1_IRQHandler:00000000 EXTI0_1_IRQHandler
-     /tmp/cctrd51c.s:1262   .text.EXTI0_1_IRQHandler:000000e0 $d
-     /tmp/cctrd51c.s:1956   .bss.current_time:00000000 current_time
-     /tmp/cctrd51c.s:1963   .bss.prev_time:00000000 prev_time
-     /tmp/cctrd51c.s:1949   .data.DELAY:00000000 DELAY
-     /tmp/cctrd51c.s:2400   .bss.htim2:00000000 htim2
-     /tmp/cctrd51c.s:2386   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
-     /tmp/cctrd51c.s:1942   .data.wave:00000000 wave
-     /tmp/cctrd51c.s:1970   .data.DestAddress:00000000 DestAddress
-     /tmp/cctrd51c.s:1984   .data.triangle_LUT:00000000 triangle_LUT
-     /tmp/cctrd51c.s:2252   .data.sin_LUT:00000000 sin_LUT
-     /tmp/cctrd51c.s:2118   .data.saw_LUT:00000000 saw_LUT
-     /tmp/cctrd51c.s:1281   .text.Error_Handler:00000000 $t
-     /tmp/cctrd51c.s:1287   .text.Error_Handler:00000000 Error_Handler
-     /tmp/cctrd51c.s:1319   .text.MX_TIM2_Init:00000000 $t
-     /tmp/cctrd51c.s:1324   .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-     /tmp/cctrd51c.s:1480   .text.MX_TIM2_Init:000000a4 $d
-     /tmp/cctrd51c.s:1977   .data.TIM2_Ticks:00000000 TIM2_Ticks
-     /tmp/cctrd51c.s:1486   .text.MX_TIM3_Init:00000000 $t
-     /tmp/cctrd51c.s:1491   .text.MX_TIM3_Init:00000000 MX_TIM3_Init
-     /tmp/cctrd51c.s:1648   .text.MX_TIM3_Init:000000a8 $d
-     /tmp/cctrd51c.s:2393   .bss.htim3:00000000 htim3
-     /tmp/cctrd51c.s:1655   .text.SystemClock_Config:00000000 $t
-     /tmp/cctrd51c.s:1661   .text.SystemClock_Config:00000000 SystemClock_Config
-     /tmp/cctrd51c.s:1834   .text.SystemClock_Config:0000006c $d
-     /tmp/cctrd51c.s:1842   .text.main:00000000 $t
-     /tmp/cctrd51c.s:1848   .text.main:00000000 main
-     /tmp/cctrd51c.s:1927   .text.main:00000060 $d
-     /tmp/cctrd51c.s:1939   .data.wave:00000000 $d
-     /tmp/cctrd51c.s:1946   .data.DELAY:00000000 $d
-     /tmp/cctrd51c.s:1953   .bss.current_time:00000000 $d
-ARM GAS  /tmp/cctrd51c.s 			page 131
+     /tmp/ccBzFMbE.s:19     .text.MX_GPIO_Init:00000000 $t
+     /tmp/ccBzFMbE.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+     /tmp/ccBzFMbE.s:202    .text.MX_GPIO_Init:0000008c $d
+     /tmp/ccBzFMbE.s:208    .text.MX_DMA_Init:00000000 $t
+     /tmp/ccBzFMbE.s:213    .text.MX_DMA_Init:00000000 MX_DMA_Init
+     /tmp/ccBzFMbE.s:260    .text.MX_DMA_Init:0000002c $d
+     /tmp/ccBzFMbE.s:265    .text.delay:00000000 $t
+     /tmp/ccBzFMbE.s:271    .text.delay:00000000 delay
+     /tmp/ccBzFMbE.s:325    .text.pulse_strobe:00000000 $t
+     /tmp/ccBzFMbE.s:331    .text.pulse_strobe:00000000 pulse_strobe
+     /tmp/ccBzFMbE.s:385    .text.pulse_strobe:00000034 $d
+     /tmp/ccBzFMbE.s:390    .text.lcd_putchar:00000000 $t
+     /tmp/ccBzFMbE.s:396    .text.lcd_putchar:00000000 lcd_putchar
+     /tmp/ccBzFMbE.s:643    .text.lcd_putchar:0000011c $d
+     /tmp/ccBzFMbE.s:649    .text.lcd_putstring:00000000 $t
+     /tmp/ccBzFMbE.s:655    .text.lcd_putstring:00000000 lcd_putstring
+     /tmp/ccBzFMbE.s:707    .text.lcd_command:00000000 $t
+     /tmp/ccBzFMbE.s:713    .text.lcd_command:00000000 lcd_command
+     /tmp/ccBzFMbE.s:964    .text.lcd_command:00000124 $d
+     /tmp/ccBzFMbE.s:971    .text.init_LCD:00000000 $t
+     /tmp/ccBzFMbE.s:977    .text.init_LCD:00000000 init_LCD
+     /tmp/ccBzFMbE.s:1071   .text.init_LCD:00000070 $d
+     /tmp/ccBzFMbE.s:1079   .rodata.EXTI0_1_IRQHandler.str1.4:00000000 $d
+     /tmp/ccBzFMbE.s:1089   .text.EXTI0_1_IRQHandler:00000000 $t
+     /tmp/ccBzFMbE.s:1095   .text.EXTI0_1_IRQHandler:00000000 EXTI0_1_IRQHandler
+     /tmp/ccBzFMbE.s:1262   .text.EXTI0_1_IRQHandler:000000e0 $d
+     /tmp/ccBzFMbE.s:1956   .bss.current_time:00000000 current_time
+     /tmp/ccBzFMbE.s:1963   .bss.prev_time:00000000 prev_time
+     /tmp/ccBzFMbE.s:1949   .data.DELAY:00000000 DELAY
+     /tmp/ccBzFMbE.s:2400   .bss.htim2:00000000 htim2
+     /tmp/ccBzFMbE.s:2386   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
+     /tmp/ccBzFMbE.s:1942   .data.wave:00000000 wave
+     /tmp/ccBzFMbE.s:1970   .data.DestAddress:00000000 DestAddress
+     /tmp/ccBzFMbE.s:1984   .data.triangle_LUT:00000000 triangle_LUT
+     /tmp/ccBzFMbE.s:2252   .data.sin_LUT:00000000 sin_LUT
+     /tmp/ccBzFMbE.s:2118   .data.saw_LUT:00000000 saw_LUT
+     /tmp/ccBzFMbE.s:1281   .text.Error_Handler:00000000 $t
+     /tmp/ccBzFMbE.s:1287   .text.Error_Handler:00000000 Error_Handler
+     /tmp/ccBzFMbE.s:1319   .text.MX_TIM2_Init:00000000 $t
+     /tmp/ccBzFMbE.s:1324   .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+     /tmp/ccBzFMbE.s:1480   .text.MX_TIM2_Init:000000a4 $d
+     /tmp/ccBzFMbE.s:1977   .data.TIM2_Ticks:00000000 TIM2_Ticks
+     /tmp/ccBzFMbE.s:1486   .text.MX_TIM3_Init:00000000 $t
+     /tmp/ccBzFMbE.s:1491   .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+     /tmp/ccBzFMbE.s:1648   .text.MX_TIM3_Init:000000a8 $d
+     /tmp/ccBzFMbE.s:2393   .bss.htim3:00000000 htim3
+     /tmp/ccBzFMbE.s:1655   .text.SystemClock_Config:00000000 $t
+     /tmp/ccBzFMbE.s:1661   .text.SystemClock_Config:00000000 SystemClock_Config
+     /tmp/ccBzFMbE.s:1834   .text.SystemClock_Config:0000006c $d
+     /tmp/ccBzFMbE.s:1842   .text.main:00000000 $t
+     /tmp/ccBzFMbE.s:1848   .text.main:00000000 main
+     /tmp/ccBzFMbE.s:1927   .text.main:00000060 $d
+     /tmp/ccBzFMbE.s:1939   .data.wave:00000000 $d
+     /tmp/ccBzFMbE.s:1946   .data.DELAY:00000000 $d
+     /tmp/ccBzFMbE.s:1953   .bss.current_time:00000000 $d
+ARM GAS  /tmp/ccBzFMbE.s 			page 131
 
 
-     /tmp/cctrd51c.s:1960   .bss.prev_time:00000000 $d
-     /tmp/cctrd51c.s:1967   .data.DestAddress:00000000 $d
-     /tmp/cctrd51c.s:1974   .data.TIM2_Ticks:00000000 $d
-     /tmp/cctrd51c.s:1981   .data.triangle_LUT:00000000 $d
-     /tmp/cctrd51c.s:2115   .data.saw_LUT:00000000 $d
-     /tmp/cctrd51c.s:2249   .data.sin_LUT:00000000 $d
-     /tmp/cctrd51c.s:2383   .bss.hdma_tim2_ch1:00000000 $d
-     /tmp/cctrd51c.s:2390   .bss.htim3:00000000 $d
-     /tmp/cctrd51c.s:2397   .bss.htim2:00000000 $d
+     /tmp/ccBzFMbE.s:1960   .bss.prev_time:00000000 $d
+     /tmp/ccBzFMbE.s:1967   .data.DestAddress:00000000 $d
+     /tmp/ccBzFMbE.s:1974   .data.TIM2_Ticks:00000000 $d
+     /tmp/ccBzFMbE.s:1981   .data.triangle_LUT:00000000 $d
+     /tmp/ccBzFMbE.s:2115   .data.saw_LUT:00000000 $d
+     /tmp/ccBzFMbE.s:2249   .data.sin_LUT:00000000 $d
+     /tmp/ccBzFMbE.s:2383   .bss.hdma_tim2_ch1:00000000 $d
+     /tmp/ccBzFMbE.s:2390   .bss.htim3:00000000 $d
+     /tmp/ccBzFMbE.s:2397   .bss.htim2:00000000 $d
 
 UNDEFINED SYMBOLS
 memset

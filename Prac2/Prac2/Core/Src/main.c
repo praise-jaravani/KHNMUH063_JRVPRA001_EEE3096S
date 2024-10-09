@@ -37,7 +37,7 @@
 // TODO: Add values for below variables
 #define NS 128       // Number of samples in LUT
 #define TIM2CLK 8000000  // STM Clock frequency
-#define F_SIGNAL 1 // Frequency of output analog signal
+#define F_SIGNAL 200 // Frequency of output analog signal
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -360,7 +360,7 @@ void EXTI0_1_IRQHandler(void)
 	}
 
 
-	// TODO: Disable DMA transfer and abort IT, then start DMA in IT mode with new LUT and re-enable transfer
+	// . is therTODO: Disable DMA transfer and abort IT, then start DMA in IT mode with new LUT and re-enable transfer
 	// HINT: Consider using C's "switch" function to handle LUT changes
 	__HAL_TIM_DISABLE_DMA(&htim2, TIM_DMA_CC1);
 	HAL_DMA_Abort_IT(&hdma_tim2_ch1); // Stop DMA transfer
