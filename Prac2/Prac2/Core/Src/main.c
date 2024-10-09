@@ -122,7 +122,7 @@ int main(void)
   delay(3000);
   init_LCD();
   lcd_command(CLEAR);
-  lcd_putstring("Sine");
+  lcd_putstring("EEE3095S Test");
 
   // TODO: Enable DMA (start transfer from LUT to CCR)
   __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
@@ -365,12 +365,12 @@ void EXTI0_1_IRQHandler(void)
 	__HAL_TIM_DISABLE_DMA(&htim2, TIM_DMA_CC1);
 	HAL_DMA_Abort_IT(&hdma_tim2_ch1); // Stop DMA transfer
 
-	// Cycle through the waveforms
+	// Cycle through the 3 waveforms
 	switch (wave) {
 		case 0:
 			delay(3000);
 			lcd_command(CLEAR);
-			lcd_putstring("Sine");
+			lcd_putstring("EEE3095S Prac Test");
 			HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)sin_LUT, DestAddress, NS);
 			__HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
 			wave = 1;
@@ -378,7 +378,7 @@ void EXTI0_1_IRQHandler(void)
 		case 1:
 			delay(3000);
 			lcd_command(CLEAR);
-			lcd_putstring("Sawtooth");
+			lcd_putstring("EEE3095S Prac Test");
 			HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)saw_LUT, DestAddress, NS);
 			__HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
 			wave = 2;
@@ -386,7 +386,7 @@ void EXTI0_1_IRQHandler(void)
 		default:
 			delay(3000);
 			lcd_command(CLEAR);
-			lcd_putstring("Triangle");
+			lcd_putstring("EEE3095S Prac Test");
 			HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)triangle_LUT, DestAddress, NS);
 			__HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
 			wave = 0;
